@@ -32,7 +32,7 @@ void par_qsort(int *data, int lo, int hi) //}, int (*compare)(const int *, const
 }
 
 
-int main (int argc, char *argv[]){
+int qsort_main (int argc, char *argv[]){
   if (argc == 1)
     {
       printf("Usage: quickSort arrayLen #tasks\n");

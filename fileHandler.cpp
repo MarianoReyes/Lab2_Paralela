@@ -35,7 +35,7 @@ using namespace std;
 bool isPrime(int number);
 //void outputLine(int primeNumber);
 
-int main(int argc, char * argv[]) {
+int fileHandler_main(int argc, char * argv[]) {
 
     //Valores iniciales default
     int exponente = 2;
