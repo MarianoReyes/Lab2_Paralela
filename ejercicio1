@@ -1,0 +1,29 @@
+#include <iostream>
+#include <fstream>
+#include "qsort.c"        // Incluir el código de qsort.c
+#include "fileHandler.cpp" // Incluir el código de fileHandler.cpp
+
+using namespace std;
+
+int main() {
+    int N; // Número de números aleatorios
+    cout << "Ingrese la cantidad de números aleatorios: ";
+    cin >> N;
+
+    // Generar N números aleatorios y escribirlos en un archivo
+    generarNumerosAleatorios(N, "numeros_aleatorios.txt");
+
+    // Leer los números aleatorios del archivo
+    int *numeros = leerNumerosDesdeArchivo("numeros_aleatorios.txt", N);
+
+    // Ordenar los números usando la función externa par_qsort de qsort.c
+    par_qsort(numeros, 0, N - 1);
+
+    // Escribir los números ordenados en un segundo archivo
+    escribirNumerosEnArchivo(numeros, N, "numeros_ordenados.txt");
+
+    // Liberar la memoria asignada en el montículo (heap)
+    delete[] numeros;
+
+    return 0;
+}
