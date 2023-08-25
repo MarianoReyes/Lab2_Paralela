@@ -4,7 +4,7 @@ Este programa genera N números aleatorios, los escribe en un archivo, luego los
 
 ### Instrucciones
 
-1. Asegurarse de tener los archivos `qsort.c`, `fileHandler.cpp` y `ejercicio1.cpp` en el mismo directorio.
+1. Asegurarse de tener los archivos `qsort.c` y `ejercicio1.cpp` en el mismo directorio.
 
 2. Compila el programa utilizando el compilador de C++. Abre una terminal y ejecuta:
 
