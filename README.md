@@ -8,7 +8,6 @@ Este programa genera N números aleatorios, los escribe en un archivo, luego los
 
 2. Compila el programa utilizando el compilador de C++. Abre una terminal y ejecuta:
 
-- ```g++ -c fileHandler.cpp -o fileHandler.o```
 - ```gcc -c qsort.c -o qsort.o```
-- ```g++ ejercicio1.cpp qsort.o fileHandler.o -o ejercicio1```
+- ```g++ ejercicio1.cpp qsort.o -o ejercicio1```
 - ```./ejercicio1```
