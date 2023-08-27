@@ -11,3 +11,8 @@ Este programa genera N números aleatorios, los escribe en un archivo, luego los
 - ```gcc -c qsort.c -o qsort.o```
 - ```g++ ejercicio1.cpp qsort.o -o ejercicio1```
 - ```./ejercicio1```
+
+3. Compila el programa paralelo utilizando el compilador de C++. Abre una terminal y ejecuta:
+
+- ```g++ ejercicio1Paralel.cpp qsort.o -o ejercicio2 -fopenmp```
+- ```./ejercicio2```
